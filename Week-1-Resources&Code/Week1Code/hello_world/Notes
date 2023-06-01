@@ -1,0 +1,54 @@
+
+
+Commenting Your Code: 
+
+
+#' to comment single lines'
+=begin
+
+this text is to be commented out 
+
+=end
+
+
+
+
+
+Ruby Global / Recognized Variables 
+
+https://www.tutorialspoint.com/ruby/ruby_variables.htm 
+
+
+Ruby Operators
+
+https://www.tutorialspoint.com/ruby/ruby_operators.htm
+
+
+
+
+Console in Sublime 
+https://www.geeksforgeeks.org/how-to-use-terminal-in-sublime-text-editor/ 
+
+
+
+
+“chomp” literally was meant to be seen as consuming the data and permanently storing the information, whereas get.downcase would disappear after that line of code. “!” this symbol was meant to mean immediate action, which is why it only works in some instances in a tightly knitted coding session (keep in mind that in real Ruby “!” is used a lot so that the data is never permanently changed unless mandatory, and only changed when needed) both downcase methods are override commands, but “!” has restrictions on it to help prevent permanent data change. In other words, it’s really only destructive, or rather deconstructive, depending on your choice to use it in such a way. The way the tutor is having you code it is for readability and not efficiency, which is a good habit to have when pair coding. In other words, what are you grabbing and what are you changing, and was it permanently changed are all things the code should explain for itself to other developers.
+
+
+
+Week 2 Notes
+
+.strip to remove white spaces
+
+
+If you wish for a link to have "default" behavior (meaning it takes to you a new page / a full page reload), It is correct to have data: { turbo: false } declared on the link.
+
+
+
+Turbo gives you the speed of a single-page web application without having to write any JavaScript. Turbo accelerates links and form submissions without requiring you to change your server-side generated HTML. It lets you carve up a page into independent frames, which can be lazy-loaded and operate as independent components. And finally, helps you make partial page updates using just HTML and a set of CRUD-like container tags. These three techniques reduce the amount of custom JavaScript that many web applications need to write by an order of magnitude. And for the few dynamic bits that are left, you're invited to finish the job with Stimulus.
+
+
+https://github.com/hotwired/turbo-rails
+
+
+
