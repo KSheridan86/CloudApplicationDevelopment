@@ -1,0 +1,16 @@
+<%= link_to 'Back to Full Calculator', calculate_path, class: "link-style" %>
+
+<h1>Simple Calculator</h1>
+<h3>Multiply</h3>
+
+<%= form_with url: "/multiply", local: true, data: { turbo: false } do |f| %>
+  <%= text_field_tag :number1 %>
+  <%= text_field_tag :number2 %>
+  <%= submit_tag "*" %>
+<% end %>
+
+<hr>
+
+<h1>Multiply</h1>
+<br>
+<%= @num1 %> * <%= @num2 %> = <%= @result %>

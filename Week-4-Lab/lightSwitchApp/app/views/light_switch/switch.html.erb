@@ -1,0 +1,18 @@
+
+
+<% if @light_switch %>
+    <%= form_with url: "/light_switch", local: true, data: {turbo: false} do |f| %>
+    <%= hidden_field_tag 'status', false %>
+    <%= submit_tag "Turn Off", class: "btn" %>
+<% end %>
+<% else %>
+    <%= form_with url: "/light_switch", local: true, data: {turbo: false} do |f| %>
+    <%= hidden_field_tag 'status', true %>
+    <%= submit_tag "Turn On", class: "btn" %>
+<% end %>
+<% end %>
+
+
+
+
+

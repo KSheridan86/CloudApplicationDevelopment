@@ -1,0 +1,38 @@
+<h1>Simple Calculator</h1>
+
+<%= form_with url: "/sum", local: true, data: { turbo: false } do |f| %>
+  <%= text_field_tag :number1 %>
+  <%= text_field_tag :number2 %>
+  <%= submit_tag "+" %>
+<% end %>
+
+<br>
+
+<%= form_with url: "/subtract", local: true, data: { turbo: false } do |f| %>
+  <%= text_field_tag :number1 %>
+  <%= text_field_tag :number2 %>
+  <%= submit_tag "-" %>
+<% end %>
+<br>
+
+<%= form_with url: "/multiply", local: true, data: { turbo: false } do |f| %>
+  <%= text_field_tag :number1 %>
+  <%= text_field_tag :number2 %>
+  <%= submit_tag "*" %>
+<% end %>
+<br>
+
+<%= form_with url: "/divide", local: true, data: { turbo: false } do |f| %>
+  <%= text_field_tag :number1 %>
+  <%= text_field_tag :number2 %>
+  <%= submit_tag "/" %>
+<% end %>
+
+<hr>
+
+<h1>Result</h1>
+<br>
+
+<% if @result %>
+  <%= @num1 %> <%= operator_symbol %> <%= @num2 %> = <%= @result %>
+<% end %>
