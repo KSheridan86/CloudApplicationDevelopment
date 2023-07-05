@@ -1,4 +1,5 @@
 class MoviesController < ApplicationController
+  protect_from_forgery with: :exception, unless: -> { request.format.json? } 
   before_action :set_movie, only: %i[ show edit update destroy ]
 
   # GET /movies or /movies.json
